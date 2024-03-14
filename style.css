@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    padding: 1.6rem;
+    max-width: 320px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #7ffbff;
+    box-shadow: 1px 16px 3px #90fbff;
+}
+
+.header-font {
+    font-family: "Pattaya", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.6rem;
+}
+
+.desc-font {
+    font-family: "Sarabun", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#navbar a {
+    font-size: 2.4rem;
+    padding: 1.6rem 0;
+    color: black;
+}
+
+#navbar a:hover {
+    background-color: aliceblue;
+}
+
+#main-doc {
+    display: flex;
+    flex-direction: column;
+    padding: 1.6rem;
+    margin-left: 4.2rem;
+    max-width: 900px;
+}
+
+.main-section {
+    padding-bottom: 1rem;
+}
+
+.main-section p {
+    font-size: 2rem;
+    padding: 0.8rem 0;
+}
+
+.main-section h2 {
+    font-size: 3.6rem;
+}
+
+.main-section ul {
+    padding-left: 5rem;
+    text-indent: 0.6rem;
+    font-size: 2rem;
+}
+
+.main-section ul li {
+    padding: 0.3rem 0;
+}
+
+.main-section .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    padding: 1rem 0;
+}
+
+.main-section .character {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section .character img {
+    width: 100%;
+    max-width: 150px;
+}
+
+.main-section .character code {
+    font-size: 1.6rem;
+    padding-top: 0.8rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    #navbar {
+        position: static;
+        max-width: 100%;
+    }
+}
